@@ -1,0 +1,13 @@
+
+Tutorials
+https://www.youtube.com/watch?v=fmyvWz5TUWg
+
+Documentation:
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+Notes:
+.erb stands for embeded ruby
+This project uses Bootstrap v5 https://getbootstrap.com/docs/5.3/getting-started/introduction/. It has built in classes and styles
+Bootstrap is essentially a library of components much like a desktop framework.
+Partials start with _ rails is smart enough to know that is a header, and it can be accessed in html, for instance, application.html.erb with <%= render 'home/header'%> if _header.html.erb is in home/
+Paths in rails are odd. They're interpretted sort of magically. Like <%= link_to 'About', home_about_path,  class:"nav-link" %>. home_about_path says that the path is home/about.html.erb. Alternatively run rails routes and look at the prefixes.
