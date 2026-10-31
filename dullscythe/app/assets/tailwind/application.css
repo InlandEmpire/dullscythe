@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper:#F0F0EE;
+  --background-image: url("homepage_backdrop.png");
+}
+
+.border-ridge {
+    border-style: ridge;
+}
