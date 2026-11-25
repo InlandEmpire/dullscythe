@@ -1,0 +1,4 @@
+<%= image_tag post.banner if post.banner.attached? %>
+<h1><%= post.title %></h1>
+<time><%= post.published_at %></time>
+<%= post.body %>

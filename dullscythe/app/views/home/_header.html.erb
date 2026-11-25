@@ -4,7 +4,7 @@
 <nav class="bg-paper border-5 border-sky-200 border-ridge mt-2 mb-2">
   <ul class="flex m-2 text-center">
     <li class="flex-1 font-heading text-2xl font-semibold"><%= button_to "Home", root_path, :method => "get", class: "cursor-pointer" %></li>
-    <li class="flex-1 font-heading text-2xl font-semibold"><%= button_to "Blog", root_path, :method => "get", class: "cursor-pointer" %></li>
+    <li class="flex-1 font-heading text-2xl font-semibold"><%= button_to "Posts", posts_path, :method => "get", class: "cursor-pointer" %></li>
     <li class="flex-1 font-heading text-2xl font-semibold"><%= button_to "About", about_path, :method => "get", class: "cursor-pointer" %></li>
   </ul>
 </nav>
