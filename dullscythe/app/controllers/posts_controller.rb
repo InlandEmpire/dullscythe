@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[ show edit update destroy ]
+  # This says anyone can view the list and individual posts, and everything else (new, create, edit, update, destroy) requires a login.
+  allow_unauthenticated_access only: %i[index show]
 
   # GET /posts or /posts.json
   def index
