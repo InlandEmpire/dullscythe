@@ -1,2 +1,8 @@
-<h1 >Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class = "flex mb-2">
+    <div class = "bg-paper border-5 border-sky-200 border-ridge p-5 flex-2/3 mr-1">
+    <%= render 'home/latest' %>
+    </div>
+    <div class = "bg-paper border-5 border-sky-200 border-ridge p-5 flex-1/3 ml-1">
+    <%= render 'home/side_bar' %>
+    </div>
+</div>

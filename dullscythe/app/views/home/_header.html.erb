@@ -1,10 +1,10 @@
 <div class='fit-image border-5 border-sky-200 border-ridge'>
-    <%= image_tag "dullscythe_banner_thin.webp", alt: "Banner", class: "logo fit-image" %>
+  <%= image_tag "dullscythe_banner_thin.webp", alt: "Banner", class: "logo fit-image" %>
 </div>
 <nav class="bg-paper border-5 border-sky-200 border-ridge mt-2 mb-2">
-  <ul class="flex m-5 text-center">
-    <li class="flex-1 "><%= button_to "Home", root_path, :method => "get" %></li>
-    <li class="flex-1"><%= button_to "Blog", root_path, :method => "get" %></li>
-    <li class="flex-1"><%= button_to "About", about_path, :method => "get" %></li>
+  <ul class="flex m-2 text-center">
+    <li class="flex-1 font-heading text-2xl font-semibold"><%= button_to "Home", root_path, :method => "get", class: "cursor-pointer" %></li>
+    <li class="flex-1 font-heading text-2xl font-semibold"><%= button_to "Blog", root_path, :method => "get", class: "cursor-pointer" %></li>
+    <li class="flex-1 font-heading text-2xl font-semibold"><%= button_to "About", about_path, :method => "get", class: "cursor-pointer" %></li>
   </ul>
 </nav>

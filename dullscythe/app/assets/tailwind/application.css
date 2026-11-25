@@ -3,6 +3,8 @@
 @theme {
   --color-paper:#F0F0EE;
   --background-image: url("homepage_backdrop.png");
+  --font-body: "Crimson Pro", Georgia, serif;
+  --font-heading: "Cormorant Garamond", Georgia, serif;
 }
 
 .border-ridge {

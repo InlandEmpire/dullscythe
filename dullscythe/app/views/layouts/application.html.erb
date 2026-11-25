@@ -6,26 +6,25 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Dullscythe">
     <meta name="mobile-web-app-capable" content="yes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Crimson+Pro:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= yield :head %>
-
     <link rel="icon" href="/icon.png" type="image/png">
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/icon.png">
-
-     <%# Includes all stylesheet files in app/assets/stylesheets %>
+    <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-
     <title><%= content_for(:title) || "Dullscythe" %></title>
   </head>
   <body class="bg-[url('homepage_backdrop.png')] bg-no-repeat bg-cover bg-center bg-fixed">
     <div class="object-center m-4 md:ml-20 md:mr-20 lg:ml-70 lg:mr-70">
       <%= render 'home/header'%>
-      <div class="bg-paper border-5 border-sky-200 border-ridge p-5">
       <%= yield %>
-      </div>
+      <%= render 'home/footer'%>
     </div>
   </body>
 </html>
